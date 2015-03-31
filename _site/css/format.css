@@ -1,0 +1,372 @@
+/* *********************************
+           commons styling
+  ********************************** */
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  color: #191919;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  color: lightgrey;
+  background-color: rgba(0,0,0,0.8);
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+
+/* ----------------------------------------------- */
+
+.glyphicon-collapse-down {font-size: 0.8em;}
+.glyphicon-collapse-up {font-size: 0.8em;}
+
+
+/* *********************************
+           Variables
+  ********************************** */
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+
+.navbar {
+  border-bottom: 1px solid grey;
+}
+
+.navbar-inverse {
+  background: rgba(62, 195, 246, 0.1);
+}
+
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: black;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: inherit;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover .colorGreenHover, .small-logo:hover .colorGreenHover, .navbar-nav > .active > a .colorGreenHover{ 
+  color: #669900;
+}
+
+.navbar-nav > li > a {
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #111;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #D3D3D3;
+}
+
+/* *********************************
+           Toolbar Logo/Brand
+  ********************************** */
+.small-logo-container {
+  padding-top: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.small-logo-container a {
+  color: black;
+}
+
+.small-logo-container a:hover {
+  text-decoration: none;
+}
+
+.small-logo {
+  font-size: 2.5em;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: rgba(0,0,0,0.8);
+  border-bottom: 1px solid grey;
+}
+
+.big-logo-container {
+  color:lightgrey;
+}
+
+
+.big-logo-row  {
+  padding-top: 20px;
+}
+.big-logo-row h1 {
+  font-size: 4em;
+  margin: 0;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+@media (min-width: 400px) {
+  .big-logo-row h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 440px) {
+  .big-logo-row h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 500px) {
+  .big-logo-row h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 630px) {
+  .big-logo-row h1 {
+    font-size: 3.5em;
+  }
+}
+@media (min-width: 768px) {
+  .big-logo-row h1 {
+    font-size: 4em;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .big-logo-row h1 {
+    font-size: 8em;
+  }
+}
+
+/* *********************************
+    Image include style (responsive)
+  ********************************** */
+
+.image-wrapper {
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-family:'Londrina solid'; 
+}
+
+.image-wrapper div a {
+  text-decoration: none;
+  color: grey;
+}
+
+.image-wrapper div a:hover {
+  color: black;
+}
+
+.image-wrapper img{
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+
+
+/* *********************************
+    include blockquote.html styling
+  ********************************** */
+
+span.quote {
+  font-family: Baskerville, serif; 
+  font-style: italic; 
+  font-size: 40px;
+}
+
+
+/* *********************************
+    include summary.html styling
+  ********************************** */
+
+  p.summary {
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: bold;
+    padding: 25px 35px 25px 35px;
+    margin: 35px 0 35px 0;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+}
+
+.summary span.glyphicon {
+  content: '\058E';
+  display: block;
+}
+
+.summary span.firstCharacter {
+  
+   color: #690; 
+   font-size: 1.2em;
+}
+
+.about h3 {
+  font-family: "Lora",serif;
+}
+
+
+.colorGreen {
+  color: #669900;
+}
+
+.about div a img{
+  /* Webkit for Chrome and Safari */
+  -webkit-transform: scale(1, 1); // This is the scale for the normal size of the image.
+  -webkit-transition-duration: 750ms;
+  -webkit-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+ 
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(1, 1);
+  -moz-transition-duration: 750ms;
+  -moz-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+ 
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(1, 1);
+  -ms-transition-duration: 750ms;
+  -ms-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+} 
+
+.about div a img:hover {
+  /* Webkit for Chrome and Safari */
+  -webkit-transform: scale(1.3, 1.3); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 750ms;
+  -webkit-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+ 
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(1.3, 1.3);
+  -moz-transition-duration: 750ms;
+  -moz-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+ 
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(1.30, 1.30);
+  -ms-transition-duration: 750ms;
+  -ms-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
+} 
+
+
+/* *********************************
+    include TLDR.html styling
+  ********************************** */
+
+.tdlrWrapper {
+    margin: 20px 0;
+  }
+
+.tldrFormat {
+  background-color: lightgrey;
+  border: 1px solid black;
+  font-size: 3em;
+  padding-left: 1em;
+  margin: 0 -35px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px #888;
+  -moz-box-shadow: 0px 2px 4px #888;
+  box-shadow: 0px 2px 4px #888;
+  min-height: 55px;
+}
+
+/*.tldrFormat:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -1px;
+  top: 100%;
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: #666 #666 transparent transparent;
+}*/
+.tldrFormat:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -2px;
+  top: 100%;
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: #666  transparent transparent #666 ;
+}
+
+.rotateText {
+  float:left;
+}
+
+.positionText {
+   position: relative;
+   left: -20px;
+   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+} 
+
+.tldrContent {
+  margin-left: 115px;
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: light;
+}
+
+.tldrContent ul {
+  position: relative;
+  left: -20px;
+}
+
+/* Fix row behavior from framework on post-site */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.greyBorders {
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+}
+
+
+/* small screen sizes correction */
+
+.small-logo-container a.small-logo {
+  margin-left: 20px;
+}
+
+/* others from bootstrap*/
+
+.col-md-12 p a {
+  color: #690;
+  font-weight: bold;
+}

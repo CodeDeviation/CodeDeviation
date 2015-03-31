@@ -1,0 +1,17 @@
+{% include header.html %}
+
+<div class="row">
+	<div class="col-md-8 greyBorders">
+
+		{{ content }}
+	
+	</div>
+	<div class="row row-offcanvas row-offcanvas-left">
+		<div class="col-md-4 sidebar-offcanvas"> <!-- col-sm-3 -->
+
+			{% include sidebar.html %}
+		
+		</div>
+	</div>	
+</div>
+{% include footer.html %}			
