@@ -23,7 +23,8 @@ h2 {
 }
 
 h3 {
-  color: rgb(66,62,66);
+  color: lightgrey;
+  background-color: rgba(0,0,0,0.8);
   padding-left: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
