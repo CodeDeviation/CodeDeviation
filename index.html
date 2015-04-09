@@ -6,11 +6,11 @@ keywords: [blog, code, programming, help]
 {% for post in paginator.posts limit: 10 %}
 
 <div class="col-md-4 postBorderBottom">
-  <a href="{{ post.url }}">
+  <div href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
     <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>
     {{ post.excerpt }}
-  </a>
+  </div>
 </div>
 
 {% endfor %}
