@@ -5,7 +5,7 @@ keywords: [blog, code, programming, help]
 
 {% for post in paginator.posts limit: 10 %}
 
-<div class="col-md-4 greyBorders postBox">
+<div class="col-md-4 postBorderBottom">
   <div>
     <h3>{{ post.title }}</h3>
     <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>
