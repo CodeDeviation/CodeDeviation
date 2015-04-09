@@ -45,7 +45,7 @@ h3 {
 .postBorderBottom {
     border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
-    height: 250px;
+    height: 215px;
 }
 
 p.marginTop10 {
@@ -54,6 +54,10 @@ p.marginTop10 {
 
 a.postExcerpts {
     text-decoration: none;
+}
+
+a.postExcerpts:hover {
+    color: lightgreen;
 }
 
 

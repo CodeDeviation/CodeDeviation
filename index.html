@@ -6,7 +6,7 @@ keywords: [blog, code, programming, help]
 {% for post in paginator.posts limit: 10 %}
 
 <div class="col-md-4">
-  <a href="{{ post.url }}" class="postExcerpts">
+    <a href="{{ post.url }}" class="postExcerpts">
         <div class="postBorderBottom">
             <h3>{{ post.title }}</h3>
             <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>
