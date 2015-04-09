@@ -43,7 +43,7 @@ h3 {
   ********************************** */
 
 .postBorderBottom {
-    border-bottom: 0.5px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 
@@ -228,6 +228,10 @@ span.quote {
     margin: 35px 0 35px 0;
     border-top: solid 1px grey;
     border-bottom: solid 1px grey;
+}
+
+p.marginTop10 {
+    margin-top: 10px;
 }
 
 .summary span.glyphicon {
