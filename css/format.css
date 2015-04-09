@@ -39,8 +39,15 @@ h3 {
 
 
 /* *********************************
-           Variables
+    Post summary on index.html
   ********************************** */
+
+.postBox {
+    height: 250px;
+    border: 1px solid lightgrey;
+}
+
+
 /* *********************************
    Some Style Overrides on Bootstrap
   ********************************** */
