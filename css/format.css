@@ -234,6 +234,10 @@ p.marginTop10 {
     margin-top: 10px;
 }
 
+a.postExcerpts {
+    text-decoration: none;
+}
+
 .summary span.glyphicon {
   content: '\058E';
   display: block;
