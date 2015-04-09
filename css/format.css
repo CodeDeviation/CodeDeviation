@@ -44,6 +44,16 @@ h3 {
 
 .postBorderBottom {
     border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    height: 250px;
+}
+
+p.marginTop10 {
+    margin-top: 10px;
+}
+
+a.postExcerpts {
+    text-decoration: none;
 }
 
 
@@ -228,14 +238,6 @@ span.quote {
     margin: 35px 0 35px 0;
     border-top: solid 1px grey;
     border-bottom: solid 1px grey;
-}
-
-p.marginTop10 {
-    margin-top: 10px;
-}
-
-a.postExcerpts {
-    text-decoration: none;
 }
 
 .summary span.glyphicon {
