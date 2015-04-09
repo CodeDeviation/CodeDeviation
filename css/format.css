@@ -62,18 +62,18 @@ a.postExcerpts:hover {
 
 a.postExcerpts:hover .postBorderBottom {
        /* Webkit for Chrome and Safari */
-  -webkit-transform: scale(1.3, 1.3); // This is the enlarged size scale of the image.
-  -webkit-transition-duration: 750ms;
+  -webkit-transform: scale(1.05, 1.05); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 1750ms;
   -webkit-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
  
   /* Webkit for Mozila Firefox */
-  -moz-transform: scale(1.3, 1.3);
-  -moz-transition-duration: 750ms;
+  -moz-transform: scale(1.05, 1.05);
+  -moz-transition-duration: 1750ms;
   -moz-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
  
   /* Webkit for IE( Version: 11, 10 ) */
-  -ms-transform: scale(1.30, 1.30);
-  -ms-transition-duration: 750ms;
+  -ms-transform: scale(1.05, 1.05);
+  -ms-transition-duration: 1750ms;
   -ms-transition-timing-function: cubic-bezier(0.210, 0.630, 0.000, 1.580);
 }
 
