@@ -1,5 +1,5 @@
 ---
-title: How to debug your code in PHP5
+title: <span class="colorGreen">H</span>ow to debug your code in PHP5
 layout: post
 excerpt: You´re new to PHP and hacking in your code, but after hitting the reload button your site goes blank or it doesn´t show what you intended? So here are some code snippets you can use to debug your code and visualize error messages.
 keywords: [PHP, code, snippets, debug, error]
