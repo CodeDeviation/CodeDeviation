@@ -1,10 +1,12 @@
 ---
 title: About Me
 layout: default-AboutMe
-category: aboutMe
-categoryurl: /assets/aboutMe/beach.jpg
+category: about me
+categoryurl: /assets/aboutMe/normal.jpg
 aboutMe: true
 ---
+
+{% include blockquote.html quote= "When inspiration does not come to me, I go halfway to meet it. (S. Freud)" %}
 
 # Über mich
 

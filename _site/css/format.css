@@ -281,7 +281,9 @@ a.postExcerpts {
 /* *********************************
     include blockquote.html styling
   ********************************** */
-
+blockquote {
+  margin: 25px 0;
+}
 span.quote {
   font-family: Baskerville, serif;
   font-style: italic;
