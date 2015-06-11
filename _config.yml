@@ -1,10 +1,10 @@
 name: "CodeDeviation"
-description: "All about WebDesign for Beginners"
+description: "Write code that deviates from standard"
 
 url: "http://localhost:4000"
 
 paginate: 5
 
 markdown: rdiscount
-permalink: pretty
+permalink: /:categories/:year/:month/:day/:title/
 highlighter: pygments

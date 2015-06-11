@@ -1,0 +1,9 @@
+{% if page.aboutMe %}
+	<div class="imageCategory-wrapper image-aboutMe">
+		<img src="{{ include.url }}" />
+	</div>
+{% else %}
+	<div class="imageCategory-wrapper">
+		<img src="{{ include.url }}" />
+	</div>
+{% endif %}

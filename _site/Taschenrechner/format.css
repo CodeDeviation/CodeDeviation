@@ -1,0 +1,151 @@
+/* minor reset */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* The Calculator itself */
+ 
+#Calculator {
+    width: 213px;
+    height: 265px;
+    margin: 10px auto 10px auto;
+    border: 1px solid black;
+    background:-moz-linear-gradient(top,#edf4fc,#d9e4f1); /* Firefox */
+    background:-ms-linear-gradient(top, #edf4fc 0%,#cbebff 47%,#d9e4f1 100%); /* IE10+ */
+    background:-webkit-gradient(linear,left top,left bottom,from(#edf4fc),to(#d9e4f1));
+}
+ 
+/* Screens */
+ 
+.top .screenTop,
+.top .screenBottom {
+    width: 189px;
+    float: left;
+    border: 1px solid black;
+    margin-left: 12px;
+    background: white;
+    text-align: right;
+}
+.top .screenTop {
+    height: 16px;
+    border-bottom: 0px;
+    margin-top: 12px;
+ 
+}
+.top .screenBottom {
+    height: 30px;
+    margin-bottom: 6px;
+    border-top: 0px;
+    line-height: 30px;
+ 
+    font-size: 23px;
+}
+ 
+/* Keys */
+ 
+.keys span {
+    float: left;
+    position: relative;
+    top: 0;
+ 
+    width: 33px;
+    height: 25px;
+ 
+    margin: 0 6px 6px 0;
+ 
+    /*Border and Background */
+ 
+    /*background for other keys than numbers will be overriden later */
+    background:-moz-linear-gradient(top, #f7fbff,#f2fbff);
+    background:-ms-linear-gradient(top, #f7fbff 0%,#e3eaed 37%,#f2fbff 100%); /* IE10+ */
+    background:-webkit-gradient(linear,left top,left bottom,from(#f7fbff),to(#f2fbff));
+ 
+    border: 1px solid #8797aa;
+    border-radius: 2px;
+ 
+    /* Fonts */
+ 
+    font-size: 11px;
+    font-family: "Segoe UI";
+    line-height: 25px;
+    text-align: center;
+ 
+    /* prevent marking the number (hmm bei JSFidlle funktioniert es nicht) */
+ 
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ 
+    transition: all 0.5s ease;
+}
+ 
+/* remove margin from right-keys */
+ 
+.keys span.operator.right,
+.keys span.operator.plus,
+.keys span.operator.minus {
+    margin-right: 0px;
+}
+ 
+.keys span.left {
+    margin-left: 12px;
+}
+ 
+/* width from zero button and height from result button */
+ 
+.keys span.zero {
+    width: 72px;
+}
+.keys span.result {
+    height: 58px;
+    float: right;
+    margin-left: 0px;
+}
+ 
+/* override: background from Operator keys, M-function keys will be overriden later  */
+ 
+.keys span.operator,
+.keys span.result {
+    background:-moz-linear-gradient(top,#ffffff,#d7e2ef);
+    background:-ms-linear-gradient(top, #f0f6fb 0%,#e3eaed 37%,#d7e2ef 100%); /* IE10+ */
+    background:-webkit-gradient(linear,left top,left bottom,from(#f0f6fb),to(#d7e2ef));
+ 
+    font-size: 8px;
+}
+ 
+/* override: background from M-funktion keys */
+ 
+.keys span.operator.MFunktions {
+    background:-moz-linear-gradient(top,#d4e0ed,#d4e0ed);
+    background:-ms-linear-gradient(top, #d4e0ed 0%,#e3eaed 37%,#d4e0ed 100%); /* IE10+ */
+    background:-webkit-gradient(linear,left top,left bottom,from(#d4e0ed),to(#d4e0ed));
+}
+ 
+/* hover effect */
+ 
+.keys span:hover {
+    /* rgba: last (5th) ist opacity (here 0.3) */
+    background: rgba(255,255,0,0.5);
+    border-color: rgba(255,225,0,0.9);
+}
+ 
+/*active effects */
+ 
+.keys span:active {
+    /* rgba: last (5th) ist opacity (here 0.3) */
+    background: rgba(255,162,0,0.6);
+    border-color: #0f1014;
+    border-style: dotted;
+}
+ 
+/* to decrease font-size, if text too long in result display (.screenBottom) */
+ 
+.top .lowerFont {
+    font-size: 15px;
+}

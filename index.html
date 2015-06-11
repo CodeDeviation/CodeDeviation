@@ -5,16 +5,17 @@ keywords: [blog, code, programming, help]
 
 {% for post in paginator.posts limit: 10 %}
 
-<div class="col-md-4">
-    <a href="{{ post.url }}" class="postExcerpts">
+<div class="col-md-4" style="position: relative;">
+  <div class="imageCategoryBox-wrapper">
+  	<img src="{{ post.categoryurl }}" />
+  </div>
+    <a href="{{ post.url }}" class="postExcerpts box">
         <div class="postBorderBottom">
             <h3>{{ post.title }}</h3>
             <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>
-            {{ post.excerpt }}
+            <span>{{ post.excerpt }}</span>
         </div>
     </a>
 </div>
 
 {% endfor %}
-
-

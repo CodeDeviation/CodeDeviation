@@ -8,9 +8,10 @@
     <meta content="CodeDeviation {% for keywords in page.keywords %} {{keywords}} {%endfor%}" name="keywords" />
 
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-  	<link rel="stylesheet" type="text/css" href="/css/syntax.css">
-  	<link rel="stylesheet" type="text/css" href="/css/format.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="/css/format.css">
 
 	<script type="text/javascript" src="/js/jquery-1.11.2.js"></script>
 	<script src="/js/bootstrap.js"></script>
@@ -23,14 +24,14 @@
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[ if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]--> 
+<![endif]-->
 	</head>
 
 	<body style="margin: 0 auto 1em auto; max-width: 1200px; padding-bottom: 2em; font-family: 'Lora', serif;">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top" style="margin: 0 auto; max-width: 1200px;">
 			<div class="container-fluid">
-				<div class="navbar-header">	
+				<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -40,29 +41,27 @@
 						<div class="small-logo-container" style="margin-right: 10px;">
                       <a class="small-logo" href="/"><span aria-hidden="true"></span> <span>&lt;</span><span class="colorGreen">!</span><span class="colorGreenHover">DEV</span><span>iation&gt;</span></a>
           				</div>
-				</div>		
+				</div>
 				<div class="collapse navbar-collapse" id="navigation">
-					<ul class="nav navbar-nav" style="font-family: 'Londrina solid'; font-size: 1.8em;">
-						{% assign current = page.url | downcase | split: '/' %}
-
-						<li {% if current[1] == null %}class='active'{% endif %}><a href="/" ><span class="colorGreenHover">H</span>ome<span class="sr-only">(current)</span></a></li>
-						<li {% if current[1] == 'about' %}class='active'{% endif %}><a href="/about"><span class="colorGreenHover">A</span>bout</a></li>
-						<li {% if current[1] == 'contact' %}class='active'{% endif %}><a href="/contact"><span class="colorGreenHover">C</span>ontact</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse /#navigation -->			
+          {% include navbar.html%}
+				</div><!-- /.navbar-collapse /#navigation -->
 			</div> <!-- /.container-fluid -->
 		</nav>
 
 		<div class="container-fluid big-logo-row">
       		<div class="container">
         		<div class="row">
+              {% if page.category %}
+                {% include image_category.html url=page.categoryurl %}
+              {% endif %}
           			<div class="col-xs-12 big-logo-container">
             			<h1 class="big-logo"><span aria-hidden="true">
-                  </span><span>&lt;</span><span class="colorGreen">!</span><span>DEViation&gt;</span>
-                    </h1>
-          			</div><!--/.col-xs-12 -->
+                    </span><span>&lt;</span><span class="colorGreen">!</span><span>DEViation&gt;</span>
+                  </h1>
+          			</div><!--/.col-xs-12 big-logo-container-->
         		</div><!--/.row -->
       		</div><!--/.container -->
-    	</div><!--/.container-fluid -->
+    </div><!--/.container-fluid big-logo-row-->
+
 
 		<div class="container-fluid">

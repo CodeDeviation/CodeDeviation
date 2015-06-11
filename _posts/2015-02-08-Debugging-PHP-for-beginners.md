@@ -3,10 +3,13 @@ title: <span class="colorGreen">H</span>ow to debug your code in PHP5
 layout: post
 excerpt: You´re new to PHP and hacking in your code, but after hitting the reload button your site goes blank or it doesn´t show what you intended? So here are some code snippets you can use to debug your code and visualize error messages.
 keywords: [PHP, code, snippets, debug, error]
+category: php
+categoryurl: /assets/categories/php.png
+comments: true
 ---
 {% include summary.html summary= '<span class="firstCharacter">Y</span>ou´re new to PHP and hacking in your code, but after hitting the reload button your site goes blank or it doesn´t show what you intended? So here are some code snippets you can use to debug your code and visualize error messages.' %}
 
-{% include image.html url='/assets/Question_mark_640.jpg' description='Errm, what?' personUrl='https://www.flickr.com/people/21496790@N06/' person='milos milosevic' %}
+<!-- {% include image.html url='/assets/Question_mark_640.jpg' description='Errm, what?' personUrl='https://www.flickr.com/people/21496790@N06/' person='milos milosevic' %} -->
 
 {% include TLDR.html content='<ul><li>Display variables, arrays and any kind of values used in your code with <code>print_r</code></li> <li>Prettify the output with the HTML-tag <code>pre</code></li><li>Create a snippet in your favorite IDE to make use of this feature as you need it</li></ul>' %}
 
@@ -38,7 +41,7 @@ Its simply done by using the HTML-tag <code>pre</code> like in the following cod
  	/* ---------- debugging ---------- */
 	echo '<pre>';
 		print_r(expression);
-	echo '</pre>';	
+	echo '</pre>';
 	/* ---------- debugging end---------- */
 ?>
 

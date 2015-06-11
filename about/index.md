@@ -1,10 +1,15 @@
 ---
 title: About Me
-layout: default
+layout: default-AboutMe
+category: aboutMe
+categoryurl: /assets/aboutMe/beach.jpg
+aboutMe: true
 ---
 
-# About Me
+# Über mich
 
-Aliquam et quam non tellus lacinia adipiscing. Vivamus commodo, sem vitae pretium accumsan, arcu lacus dictum orci, sed ullamcorper risus leo ut ligula. Nulla luctus tristique laoreet. Donec placerat arcu a leo ullamcorper vitae dictum tortor rhoncus. In pulvinar facilisis libero, nec dignissim orci volutpat ac. Etiam eget nunc lacus.
+## Quereinsteiger in die Software-Entwicklung
+  Nach meiner Doktorarbeit in der Molekularbiologie (mit großem Anteil an Bioinformatik) sah ich für mich persönlich keine Zukunft mehr in diesem Bereich und nahm die Herausforderung an, komplett umzusatteln. Nun lasse ich mich zum "Software-Developer" ausbilden und bin bei einer kleinen, aber erfolgreichen Software-Agentur angestellt. Dort werde ich momentan auf eigenem Wunsch hauptsächlich im Bereich Frontend-Entwicklung eingesetzt.
 
-Integer non porttitor nisl. Mauris elit dolor, pretium euismod vehicula id, facilisis a orci. Phasellus at magna quam, vel tincidunt quam. Sed a molestie purus. Mauris fringilla pretium lorem ut eleifend. Curabitur rhoncus, arcu eu blandit gravida, dolor tellus consequat tellus, at tincidunt risus felis id justo. Sed ac erat ultrices ipsum tempus suscipit id vitae nunc. Integer sit amet sapien quis lectus tempor pharetra ut at velit. Quisque semper, libero a pellentesque sollicitudin, massa libero euismod justo, porta molestie erat dui vel tellus. Ut lacus turpis, dapibus ut mollis id, aliquet in leo. Curabitur sollicitudin mauris sollicitudin dolor aliquam tristique. Ut congue sem vitae justo congue consequat. Integer mauris nisi, blandit in facilisis sed, lacinia quis lacus. Vestibulum sem enim, ullamcorper a porttitor vel, laoreet quis diam.
+## Sprach-Vorlieben  
+  Die rasante Weiterentwicklung der Javascript-Sprache der letzten Jahre (z.B. Frameworks, welche komplexe Projekte sowohl im Web, als auch als Web-App ermöglichen) bietet gerade mir als Einsteiger phantastische Möglichkeiten meinen Enthusiasmus und Kreativität auszuleben und in die Komplexität der Software-Entwicklung einzusteigen.

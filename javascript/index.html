@@ -1,0 +1,22 @@
+---
+layout: default
+keywords: [blog, code, programming, help]
+category: javascript
+categoryurl: /assets/categories/javascript.png
+backgroundurl: url(/assets/categories/javascript.png)
+---
+
+
+{% for post in site.categories.javascript limit: 10 %}
+
+<div class="col-md-4">
+    <a href="{{ post.url }}" class="postExcerpts box">
+        <div class="postBorderBottom">
+            <h3>{{ post.title }}</h3>
+            <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>
+            <span>{{ post.excerpt }}</span>
+        </div>
+    </a>
+</div>
+
+{% endfor %}
