@@ -1,0 +1,33 @@
+		</div>
+        <div class="container">
+					<div class="about" style="margin-left: 1em;">
+						<nav>
+							<h3><span class="colorGreen">M</span>ost recent posts:</h3>
+							<ul class="nav nav-sidebar">
+								{% for post in site.posts limit: 5 %}
+								<li role="presentation"><a href="{{ post.url }}"><span class="colorGreen">~</span> {{ post.title }} <span class="colorGreen">~</span></a></li>
+								{% endfor %}
+							</ul>
+							{% if page.layout == "post" %}
+								<h3><span class="colorGreen">T</span>ags</h3>
+									{% for keywords in page.keywords %}
+										<span style="margin-right: 1em;"> {{keywords}} </span>
+									{% endfor %}
+							{% endif %}
+						</nav>
+
+						{% include disqus.html %}
+
+						<h3><span class="colorGreen">C</span>ontact <span>&</span> more</h3>
+						<div style="margin: 0 auto; width: 215px">
+							<a href="https://twitter.com/_WebDesignInfo_" target="_blank"><img src="/assets/icons/twitter.png"></a>
+							<a href="https://plus.google.com/u/0/116806489213497020417" target="_blank"><img src="/assets/icons/google.png"></a>
+							<a href="#" target="_blank"><img src="/assets/icons/facebook.png"></a>
+							<a href="#" target="_blank"><img src="/assets/icons/youtube.png"></a>
+						</div>
+						<p>If you found this page useful or want to leave me a note, don´t hesitate to contact me, throw a 'like' or tweet me. </p>
+					</div>
+        </div>
+	</body>
+
+</html>
