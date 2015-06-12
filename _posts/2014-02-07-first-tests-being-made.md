@@ -2,7 +2,7 @@
 title: Lorem Ipsum Dolor Sit Amet
 layout: post
 excerpt: Dies ist eine Summary, die natürlich sofort funktioniert...
-category: html5
+category: HTML5
 categoryurl: /assets/categories/html5.png
 backgroundurl: url(/assets/categories/html5.png)
 ---

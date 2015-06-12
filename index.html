@@ -2,15 +2,22 @@
 layout: default
 keywords: [blog, code, programming, help]
 category: Home
+categoryColor:
+  Javascript: "rgba(114,189,57, 0.8)"
+  Php: "rgba(61,70,125, 0.8)"
+  CSS3: "rgba(189,108,79, 0.8)"
+  HTML5: "rgba(61,33,23, 0.8)"
+  Nodejs: "rgba(78,112,53, 0.8)"
 ---
 
 {% for post in paginator.posts limit: 10 %}
 
-<div class="col-md-4" style="position: relative;">
-  <div class="imageCategoryBox-wrapper">
-  	<img src="{{ post.categoryurl }}" />
-  </div>
+<div class="col-md-3">
+
     <a href="{{ post.url }}" class="postExcerpts box">
+      <div class="categoryBox"style="border-bottom: 4px solid {{ page.catgoryColor[post.category] }}; color: {{ page.categoryColor[post.category] }}">
+        {{post.category}}
+      </div>
         <div class="postBorderBottom">
             <h3>{{ post.title }}</h3>
             <h5>{{ post.date | date: '%B %d, %Y'| }}</h5>

@@ -1,10 +1,10 @@
 ---
-title: <span class="colorGreen">J</span>avascript lernen - Teil 1 Prozeduraler Code
+title: Javascript lernen - Teil 1 Prozeduraler Code
 layout: post
 excerpt: In dieser Reihe werde ich euch die Grundlagen der Javascript Sprache beibringen, angefangen mit der prozeduralen Form.
 keywords: [Javascript, JS, Grundlagen, Einstieg, Einführung, Tutorial, Taschenrechner]
-category: javascript
-categoryurl: /assets/categories/javascript.png
+category: Javascript
+
 ---
 {% include summary.html summary= 'In dieser Reihe werde ich euch die Grundlagen der Javscript Sprache beibringen, angefangen mit der prozeduralen Form. In dieser Art, schreibt man seine Methoden einfach stur nacheinander. Dies ist völlig ok und ausreichend für kleinere Projekte, wie unseren Taschenrechner. Sollte man jedoch ein umfangreicheres Projekt anstreben, so sollte man sich unbedingt die OOP-SChreibweise von Javscript aneignen (siehe dazu den nächsten Teil unserer Javascript-Grundlagen-Reihe) .' %}
 

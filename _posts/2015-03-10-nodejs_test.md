@@ -1,10 +1,9 @@
 ---
-title: <span class="colorGreen">C</span>SS3 element positions explained
+title: CSS3 element positions explained
 layout: post
 excerpt: This small article will show you how to properly make use of the CSS3 position feature (static, fixed, absolute & relative).
 keywords: [PHP, code, snippets, debug, error]
-category: nodejs
-categoryurl: /assets/categories/nodejs.png
+category: Nodejs
 ---
 {% include summary.html summary= 'This small article will show you how to properly make use of the CSS3 position feature (static, fixed, absolute & relative).' %}
 

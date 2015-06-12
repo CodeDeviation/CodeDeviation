@@ -9,15 +9,11 @@
 
 - name: "My 2 cents"
   url: "/#/"
-
-- name: "Posts"
-  child_links:
-    - name: "Javascript"
-      url: "/javascript/"
-    - name: "NodeJS"
-      url: "/nodejs/"
-      divider: true
-    - name: "PHP"
-      url: "/php/"
-    - name: "CSS"
-      url: "/css3/"
+- name: "Javascript"
+  url: "/javascript/"
+- name: "NodeJS"
+  url: "/nodejs/"
+- name: "PHP"
+  url: "/php/"
+- name: "CSS"
+  url: "/css3/"
